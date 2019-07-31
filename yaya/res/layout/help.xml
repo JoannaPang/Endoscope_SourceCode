@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/coantec_help_backlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" layout="@layout/dialogbacklayout" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/coantec_help_backlayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:id="@id/coantec_help_title_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="帮助" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_content1" />
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Operation" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_en_content1" />
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="指示灯介绍:" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_content2" />
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Different indicator light:" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_en_content2" />
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="故障及解决措施：" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_content3" />
+            <TextView android:textSize="@dimen/coantec_help_title" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Faults and Solutions:" />
+            <TextView android:textSize="@dimen/coantec_help_content" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/help_en_content3" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/audioselect_operator_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/back_state" />
+    <RelativeLayout android:id="@id/layout_actionbar" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/audioselect_set_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_state" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/audioselect_operator_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_icon" android:scaleType="fitXY" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/media_l" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/audioselect_operator_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_icon" android:scaleType="fitXY" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/photo_l" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

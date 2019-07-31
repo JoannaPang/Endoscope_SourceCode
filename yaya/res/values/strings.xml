@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YAYA</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home_notice">COANTEC,Only For Best!</string>
+    <string name="operator_help">帮助</string>
+    <string name="help_content1">"1、长按power 按键3秒钟，产品正常启动。此时，power按键灯闪烁一次。三秒过后按键灯长亮。
+ 2、打开手机WIFI连接模式，使用手机WIFI搜索YAYAxx（xx为阿拉伯数字），并连接。WIFI连接成功后，打开古安泰APP ，即可观察图像。有图像传输时，power按键灯持续闪烁。
+ 3、中间LED+/-调节按键，调节摄像头照明亮度。
+ 4、拍照/录像按键，短按为“拍照”操作，按键灯闪烁一次；长按为“录像”操作，按键灯持续闪烁，松开按键，保持录像状态，再按一次拍照/录像键所录照片/视频自动保存。
+"</string>
+    <string name="help_en_content1">"1、Keep pressing Power button for 3 seconds, green indicator lights up to start.
+ 2、Turn on wifi mode on your phone or ipad, look for wifi named “yaya” and connect it.(wifi code:12345678). After connection, turn on relative APP, it start working and the green light on Power button keeps flashing.
+ 3、The middle button is for brightness adjusting of the camera.
+ 4、Button is for taking photo or video. Short press for photo mode, blue light flashes once. Long press for video mode, blue light keeps flashing and it starts to record. Press the button again, the record will be auto-saved.
+"</string>
+    <string name="help_content2">"电量不足 → 亮红灯；
+ 充电中 → 亮橙色， 充电完成 → 橙色灭；
+ 仪器运行 → 绿色亮， 手机WIFI连接 → 绿色持续闪烁；
+ 拍照 → 蓝灯闪一次， 录像 → 蓝灯持续闪烁。
+"</string>
+    <string name="help_en_content2">"Low Battery-red light on;
+ Charging-orange light on,Charge Complete-orange light off;
+ Instrument working-green light on,Wifi Connection-green light keeps flashing;
+ Photo Mode-blue light flashes once,Video Mode-blue light keeps flashing.
+"</string>
+    <string name="help_content3">"1、APP无图像；
+ 措施：检查是否连接好相应的WIFI网络名称，连接客户端是否超过预设4个，若都正确，退出APP 及APP后台，重启APP，重新连接。
+ 2、图像卡屏有雪花；
+ 措施：查看电池是否电量不足，进行充电。
+"</string>
+    <string name="help_en_content3">"1、No image displaying;
+ Solution: Please check if wifi connection is correct, or the amount of terminal connection is more than 4. If normal, restart the device and connect it again.
+ 2、The display image gets stuck;
+ Solution: Please check if battery is weak. If so, charge it, otherwise, restart the device and connect it again."</string>
+    <string name="tv_Playback_BuiltinSdcard">手机存储</string>
+    <string name="tv_Playback_ExternalSdcard">外置SD卡</string>
+    <string name="str_playback_notfindexcard">未发现存储设备</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_exit">确认退出程序？</string>
+    <string name="mainmenu_home">主目录</string>
+    <string name="mainmenu_refresh">刷新</string>
+    <string name="mainmenu_createdir">新建文件夹</string>
+    <string name="mainmenu_exit">退出</string>
+    <string name="file_rename">重命名</string>
+    <string name="file_delete">删除</string>
+    <string name="file_info">详情</string>
+    <string name="file_cannotopen">无法打开: %1$s</string>
+    <string name="file_exists">文件已存在！</string>
+    <string name="file_namecannotempty">文件名不能为空</string>
+    <string name="file_create_fail">创建文件失败！</string>
+    <string name="file_rename_fail">重命名失败！</string>
+    <string name="file_name">文件名</string>
+    <string name="file_size">大小</string>
+    <string name="file_contents">内容</string>
+    <string name="file_lastmodified">最后修改时间</string>
+    <string name="file_paste">粘贴</string>
+    <string name="file_copy">复制</string>
+    <string name="file_move">移动</string>
+    <string name="file_create">新建</string>
+    <string name="file_save">保存</string>
+    <string name="file_exit">退出</string>
+    <string name="file_copy_fail">复制文件失败！</string>
+    <string name="file_move_fail">移动文件失败！</string>
+    <string name="file_notexists">文件不存在！</string>
+    <string name="tv_current">当前：</string>
+    <string name="tv_go_back">上一级</string>
+    <string name="txt_select_onemorepress">再按一次退出程序</string>
+    <string name="str_warning">警告</string>
+    <string name="str_replace">是否替换？</string>
+</resources>

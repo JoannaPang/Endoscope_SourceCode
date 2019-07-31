@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.methnm.coantec.moudle.SurfaceView android:id="@id/wifi_home_operator_surface" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/wifi_home_operator_seeklayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/wifi_home_operator_bigicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/big" android:scaleType="fitXY" />
+        <com.methnm.coantec.moudle.SeekBars android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/wifi_home_operator_seekbars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="20" android:progressDrawable="@drawable/progress" android:thumb="@drawable/thumb" android:thumbOffset="0.0dip" />
+        <ImageView android:id="@id/wifi_home_operator_smallicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/small" android:scaleType="fitXY" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/wifi_home_operator_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wifi_home_operator_left_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottombar" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/wifi_home_operator_left_area" android:layout_alignTop="@id/wifi_home_operator_left_area" android:layout_alignRight="@id/wifi_home_operator_left_area" android:layout_alignBottom="@id/wifi_home_operator_left_area">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_playback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fileicon" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_press_drawable" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videodis" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wifi_home_operator_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wifi_home_operator_right_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/topbar" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/wifi_home_operator_right_area" android:layout_alignTop="@id/wifi_home_operator_right_area" android:layout_alignRight="@id/wifi_home_operator_right_area" android:layout_alignBottom="@id/wifi_home_operator_right_area">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rotate" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/helpicon" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/home_wifi_capture_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/wifi_home_operator_right_layout" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/home_wifi_capture_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record" android:scaleType="fitXY" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/red" android:gravity="left" android:id="@id/home_wifi_capture_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_toRightOf="@id/home_wifi_capture_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

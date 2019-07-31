@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <GridView android:gravity="center" android:id="@id/gd_photo_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="2" />
+    <TextView android:textSize="32.0sp" android:textColor="@android:color/black" android:id="@id/notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No File!" android:layout_centerInParent="true" />
+</RelativeLayout>

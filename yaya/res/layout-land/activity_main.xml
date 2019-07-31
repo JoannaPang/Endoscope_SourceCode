@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.methnm.coantec.moudle.SurfaceView android:id="@id/wifi_home_operator_surface" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/wifi_home_operator_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wifi_home_operator_left_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/leftbar" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/wifi_home_operator_left_area" android:layout_alignTop="@id/wifi_home_operator_left_area" android:layout_alignRight="@id/wifi_home_operator_left_area" android:layout_alignBottom="@id/wifi_home_operator_left_area">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_playback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fileicon" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_press_drawable" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videodis" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/wifi_home_operator_seeklayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_toRightOf="@id/wifi_home_operator_left_layout" android:layout_centerVertical="true">
+        <ImageView android:id="@id/wifi_home_operator_bigicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/big" android:scaleType="fitXY" />
+        <com.methnm.coantec.moudle.SeekBars android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/wifi_home_operator_seekbars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="20" android:progressDrawable="@drawable/progress" android:thumb="@drawable/thumb" android:thumbOffset="0.0dip" />
+        <ImageView android:id="@id/wifi_home_operator_smallicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/small" android:scaleType="fitXY" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/wifi_home_operator_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wifi_home_operator_right_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/rightbar" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/home_wifi_capture_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/wifi_home_operator_right_area">
+            <ImageView android:id="@id/home_wifi_capture_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record" android:scaleType="fitXY" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/red" android:gravity="left" android:id="@id/home_wifi_capture_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_toRightOf="@id/home_wifi_capture_icon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/wifi_home_operator_right_area" android:layout_alignTop="@id/wifi_home_operator_right_area" android:layout_alignRight="@id/wifi_home_operator_right_area" android:layout_alignBottom="@id/wifi_home_operator_right_area">
+            <RelativeLayout android:id="@id/relative" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_set" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/home_wifi_coantec_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/helpicon" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <GridView android:gravity="center" android:id="@id/gd_main_photos" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#50000000" android:stretchMode="columnWidth" android:numColumns="6" android:layout_toLeftOf="@id/wifi_home_operator_right_area" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linear_photo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/wifi_home_operator_right_area" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/iv1" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv2" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv3" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv4" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv5" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv6" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/big" android:layout_toLeftOf="@id/wifi_home_operator_right_area" android:layout_toRightOf="@id/linear_photo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/iv_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/small" android:layout_toLeftOf="@id/wifi_home_operator_right_area" android:layout_toRightOf="@id/linear_photo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_photo_zoom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/wifi_home_operator_right_area" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_photo_zoom1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv1_zoom" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv2_zoom" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv3_zoom" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_photo_zoom2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv4_zoom" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv5_zoom" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv6_zoom" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/friends_sends_pictures_no" android:scaleType="fitXY" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

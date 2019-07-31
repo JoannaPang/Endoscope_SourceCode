@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/coantec_videoplayer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.methnm.coantec.moudle.SurfaceView android:id="@id/coantec_video_surfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/coantec_videoplayer_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/coantec_videoplayer_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/s_bjt" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/coantec_videoplayer_top_bg" android:layout_alignTop="@id/coantec_videoplayer_top_bg" android:layout_alignRight="@id/coantec_videoplayer_top_bg" android:layout_alignBottom="@id/coantec_videoplayer_top_bg">
+            <ImageView android:id="@id/coantec_videoplayer_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:src="@drawable/backicon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/yellow" android:id="@id/coantec_videoplayer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/coantec_videoplayer_bottom_timebar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/coantec_videoplayer_timebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/time_bar" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/coantec_videoplayer_timebar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/coantec_videoplayer_timebar_bg" android:layout_alignBottom="@id/coantec_videoplayer_timebar_bg">
+            <ImageView android:id="@id/coantec_videoplayer_play_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/bsj" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/coantec_videoplayer_curtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="00:00:00" android:layout_toRightOf="@id/coantec_videoplayer_play_state" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/coantec_videoplayer_totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/00:00:00" android:layout_toRightOf="@id/coantec_videoplayer_curtime" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/coantec_videoplayer_seekbar" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/seekbar_style" android:thumb="@drawable/seekbar_thumb" android:layout_toRightOf="@id/coantec_videoplayer_totaltime" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/coantec_videoplayer_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/bficon" android:layout_centerInParent="true" />
+</RelativeLayout>

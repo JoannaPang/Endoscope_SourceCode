@@ -1,0 +1,26 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.wifidevice.coantec.activity_2.1_10.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- mp3
+- jpg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '17'
+sharedLibrary: false
+sparseResources: true
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.0
+versionInfo:
+  versionCode: '10'
+  versionName: '2.1'
